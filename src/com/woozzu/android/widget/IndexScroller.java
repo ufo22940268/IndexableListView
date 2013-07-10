@@ -117,40 +117,41 @@ public class IndexScroller {
 	}
 	
 	public boolean onTouchEvent(MotionEvent ev) {
-		switch (ev.getAction()) {
-		case MotionEvent.ACTION_DOWN:
-			// If down event occurs inside index bar region, start indexing
-			if (mState != STATE_HIDDEN && contains(ev.getX(), ev.getY())) {
-				setState(STATE_SHOWN);
-				
-				// It demonstrates that the motion event started from index bar
-				mIsIndexing = true;
-				// Determine which section the point is in, and move the list to that section
-				mCurrentSection = getSectionByPoint(ev.getY());
-				mListView.setSelection(mIndexer.getPositionForSection(mCurrentSection));
-				return true;
-			}
-			break;
-		case MotionEvent.ACTION_MOVE:
-			if (mIsIndexing) {
-				// If this event moves inside index bar
-				if (contains(ev.getX(), ev.getY())) {
-					// Determine which section the point is in, and move the list to that section
-					mCurrentSection = getSectionByPoint(ev.getY());
-					mListView.setSelection(mIndexer.getPositionForSection(mCurrentSection));
-				}
-				return true;
-			}
-			break;
-		case MotionEvent.ACTION_UP:
-			if (mIsIndexing) {
-				mIsIndexing = false;
-				mCurrentSection = -1;
-			}
-			if (mState == STATE_SHOWN)
-				setState(STATE_HIDING);
-			break;
-		}
+        switch (ev.getAction()) {
+            case MotionEvent.ACTION_DOWN:
+                // If down event occurs inside index bar region, start indexing
+                if (mState != STATE_HIDDEN && contains(ev.getX(), ev.getY())) {
+                    setState(STATE_SHOWN);
+
+                    // It demonstrates that the motion event started from index bar
+                    mIsIndexing = true;
+                    // Determine which section the point is in, and move the list to that section
+                    mCurrentSection = getSectionByPoint(ev.getY());
+                    mListView.setSelection(mIndexer.getPositionForSection(mCurrentSection));
+                    return true;
+                }
+                break;
+            case MotionEvent.ACTION_MOVE:
+                if (mIsIndexing) {
+                    // If this event moves inside index bar
+                    if (contains(ev.getX(), ev.getY())) {
+                        // Determine which section the point is in, and move the list to that section
+                        mCurrentSection = getSectionByPoint(ev.getY());
+                        mListView.setSelection(mIndexer.getPositionForSection(mCurrentSection));
+                    }
+                    return true;
+                }
+                break;
+            case MotionEvent.ACTION_UP:
+                if (mIsIndexing) {
+                    mIsIndexing = false;
+                    mCurrentSection = -1;
+                }
+                if (mState == STATE_SHOWN)
+                    setState(STATE_HIDING);
+                break;
+        }
+
 		return false;
 	}
 	

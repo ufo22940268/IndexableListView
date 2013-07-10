@@ -24,15 +24,15 @@ import android.view.MotionEvent;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 
-public class IndexableListView extends ListView {
+public class IndexableListView extends com.hb.views.PinnedSectionListView{
 	
 	private boolean mIsFastScrollEnabled = false;
 	private IndexScroller mScroller = null;
 	private GestureDetector mGestureDetector = null;
 
-	public IndexableListView(Context context) {
-		super(context);
-	}
+	//public IndexableListView(Context context) {
+		//super(context);
+	//}
 
 	public IndexableListView(Context context, AttributeSet attrs) {
 		super(context, attrs);
