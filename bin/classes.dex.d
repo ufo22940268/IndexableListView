@@ -1,0 +1,21 @@
+/Users/ccheng/workspace/IndexableListView/bin/classes.dex : \
+/Users/ccheng/workspace/IndexableListView/bin/classes/com/woozzu/android/indexablelistview/BuildConfig.class \
+/Users/ccheng/workspace/IndexableListView/bin/classes/com/woozzu/android/indexablelistview/IndexableListViewActivity$ContentAdapter$CityComparator.class \
+/Users/ccheng/workspace/IndexableListView/bin/classes/com/woozzu/android/indexablelistview/IndexableListViewActivity$ContentAdapter$Item.class \
+/Users/ccheng/workspace/IndexableListView/bin/classes/com/woozzu/android/indexablelistview/IndexableListViewActivity$ContentAdapter.class \
+/Users/ccheng/workspace/IndexableListView/bin/classes/com/woozzu/android/indexablelistview/IndexableListViewActivity.class \
+/Users/ccheng/workspace/IndexableListView/bin/classes/com/woozzu/android/indexablelistview/R$attr.class \
+/Users/ccheng/workspace/IndexableListView/bin/classes/com/woozzu/android/indexablelistview/R$drawable.class \
+/Users/ccheng/workspace/IndexableListView/bin/classes/com/woozzu/android/indexablelistview/R$id.class \
+/Users/ccheng/workspace/IndexableListView/bin/classes/com/woozzu/android/indexablelistview/R$layout.class \
+/Users/ccheng/workspace/IndexableListView/bin/classes/com/woozzu/android/indexablelistview/R$string.class \
+/Users/ccheng/workspace/IndexableListView/bin/classes/com/woozzu/android/indexablelistview/R.class \
+/Users/ccheng/workspace/IndexableListView/bin/classes/com/woozzu/android/util/HanziToPingyin$DialerSearchToken.class \
+/Users/ccheng/workspace/IndexableListView/bin/classes/com/woozzu/android/util/HanziToPingyin$Token.class \
+/Users/ccheng/workspace/IndexableListView/bin/classes/com/woozzu/android/util/HanziToPingyin.class \
+/Users/ccheng/workspace/IndexableListView/bin/classes/com/woozzu/android/util/StringMatcher.class \
+/Users/ccheng/workspace/IndexableListView/bin/classes/com/woozzu/android/widget/IndexableListView$1.class \
+/Users/ccheng/workspace/IndexableListView/bin/classes/com/woozzu/android/widget/IndexableListView.class \
+/Users/ccheng/workspace/IndexableListView/bin/classes/com/woozzu/android/widget/IndexScroller$1.class \
+/Users/ccheng/workspace/IndexableListView/bin/classes/com/woozzu/android/widget/IndexScroller.class \
+/Users/ccheng/workspace/IndexableListView/bin/dexedLibs/classes-785cfafbabdbe9e69cab344d6367a5be.jar \

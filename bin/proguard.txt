@@ -1,0 +1,6 @@
+# view AndroidManifest.xml #generated:7
+-keep class com.woozzu.android.indexablelistview.IndexableListViewActivity { <init>(...); }
+
+# view res/layout/main.xml #generated:6
+-keep class com.woozzu.android.widget.IndexableListView { <init>(...); }
+
